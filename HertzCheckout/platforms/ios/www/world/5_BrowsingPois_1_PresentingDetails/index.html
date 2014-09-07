@@ -51,25 +51,30 @@
             <!-- PANELS, ONLY VISIBLE ON DEMAND -->
 
             <!-- panel containing POI detail information -->
-            <div data-role="panel" id="panel-poidetail" data-position="right" data-display="overlay" style="background-color:#F0F0F0;" data-theme="c">
+            <div data-role="panel" id="panel-poidetail" data-position="right" data-display="overlay" style="background-color:#fff; width: 400px; padding: 0px;">
 
                 <!-- header with "close" button -->
-                <div data-role="header" data-theme="c">
+                <div data-role="header">
                     <h1>Details</h1>
                     <a href="#header" data-rel="close">Close</a>
                 </div>
 
                 <!-- content of POI detail page, you may also add thumbnails etc. here if you like -->
                  <div data-role="content">
+                    <div>
+                        <h1 style="float: left;" id="poi-detail-title"></h1>
+                        <h2 style="float: right;" id="poi-detail-description"></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                    </div>
 
-                    <!-- title -->
-                    <h3 id="poi-detail-title"></h3>
 
-                    <!-- description -->
-                    <h4 id="poi-detail-description"></h4>
-
-                    <!-- distance -->
-                    <h4>Distance: <a id="poi-detail-distance"></a></h4>
+                    <div id="poi-detail-details"></div>
+                    
+                    <div style="margin-top: 50px; text-align: center;">
+                        <div style="width: 200px; background: #009900; border: 0px; border-radius: 4px; color: #fff; margin: auto; padding: 12px; text-shadow: none;">
+                            Book It!
+                        </div>
+                    </div>
                 </div>
             </div>
 

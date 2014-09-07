@@ -6,6 +6,58 @@ var ServerInformation = {
 	POIDATA_SERVER_ARG_NR_POIS: "nrPois"
 };
 
+var vegasData = [{
+	"id":"1","longitude":"-115.275289","latitude":"36.081308",
+	"description":"$42/day",
+	"name":"Kia Rio",
+	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_kia_rio.jpg\" /></div><div>The 2014 Kia Rio is ranked #9 in Affordable Small Cars by U.S. News & World Report.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
+},{
+	"id":"2","longitude":"-115.246289","latitude":"36.097308",
+	"description":"$42/day",
+	"name":"Ford Focus",
+	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_ford_focus.jpg\" /></div><div>The 2014 Ford Focus has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
+},{
+	"id":"3","longitude":"-115.101289","latitude":"36.083308",
+	"description":"$46/day",
+	"name":"Toyota Corolla",
+	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_toyota_corolla.jpg\" /></div><div>The 2014 Toyota Corolla has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
+},{
+	"id":"4","longitude":"-115.212289","latitude":"36.193308",
+	"description":"$60/day",
+	"name":"Nissan Altima 2-door",
+	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_nissan_altima.jpg\" /></div><div>The 2014 Nissan Altima has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
+},{
+	"id":"5","longitude":"-115.110289","latitude":"36.104308",
+	"description":"$61/day",
+	"name":"Chevrolet Malibu",
+	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_chevrolet_malibu.jpg\" /></div><div>The 2014 Chevy Malibu has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
+},{
+	"id":"6","longitude":"-115.266289","latitude":"36.096308",
+	"description":"$66/day",
+	"name":"Toyota Camry",
+	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_toyota_camry.jpg\" /></div><div>The 2014 Toyota Camry has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
+},{
+	"id":"7","longitude":"-115.236289","latitude":"36.025308",
+	"description":"$59/day",
+	"name":"Toyota Rav 4",
+	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_toyota_rav4.jpg\" /></div><div>The 2014 Toyota Rav 4 has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
+},{
+	"id":"8","longitude":"-115.170289","latitude":"36.086308",
+	"description":"$75/day",
+	"name":"Chevrolet Equinox",
+	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_chevrolet_equinox.jpg\" /></div><div>The 2014 Chevy Equinox has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
+},{
+	"id":"9","longitude":"-115.122289","latitude":"36.133308",
+	"description":"$192/day",
+	"name":"Mercedes E Class",
+	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_mercedes_e_class.jpg\" /></div><div>The 2014 Mercedes E Class has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
+},{
+	"id":"10","longitude":"-115.238289","latitude":"36.035308",
+	"description":"$192/day",
+	"name":"Ford Mustang GT Premium",
+	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_ford_mustang_gt_premium.jpg\" /></div><div>The 2014 Ford Mustang GT Premium has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
+}];
+
 // implementation of AR-Experience (aka "World")
 var World = {
 	// you may request new data from server periodically, however: in this sample data is only requested once
@@ -30,7 +82,7 @@ var World = {
 
 	// called to inject new POI data
 	loadPoisFromJsonData: function loadPoisFromJsonDataFn(poiData) {
-
+		poiData = vegasData;
 		// empty list of visible markers
 		World.markerList = [];
 
@@ -47,7 +99,8 @@ var World = {
 				"longitude": parseFloat(poiData[currentPlaceNr].longitude),
 				"altitude": parseFloat(poiData[currentPlaceNr].altitude),
 				"title": poiData[currentPlaceNr].name,
-				"description": poiData[currentPlaceNr].description
+				"description": poiData[currentPlaceNr].description,
+				"details": poiData[currentPlaceNr].details
 			};
 
 			World.markerList.push(new Marker(singlePoi));
@@ -113,11 +166,12 @@ var World = {
 		// update panel values
 		$("#poi-detail-title").html(marker.poiData.title);
 		$("#poi-detail-description").html(marker.poiData.description);
+		$("#poi-detail-details").html(marker.poiData.details);
 
 		// distance and altitude are measured in meters by the SDK. You may convert them to miles / feet if required.
 		var distanceToUserValue = (marker.distanceToUser > 999) ? ((marker.distanceToUser / 1000).toFixed(2) + " km") : (Math.round(marker.distanceToUser) + " m");
 
-		$("#poi-detail-distance").html(distanceToUserValue);
+		//$("#poi-detail-distance").html(distanceToUserValue);
 
 		// show panel
 		$("#panel-poidetail").panel("open", 123);
