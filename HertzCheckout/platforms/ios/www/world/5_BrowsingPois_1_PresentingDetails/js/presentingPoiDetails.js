@@ -64,10 +64,25 @@ $(function() {
 		if(!booking) {
 			booking = true;
 			$('#bookitbutton').addClass('loading');
-			setTimeout(function() {
-				$('#bookitbutton').removeClass('loading');
+			// call to Hertz Extend Reservation (only if we're on their network)
+			/*$.ajax('http://192.168.150.1/apps/rental/api/rental/extend?newEndDateSec=1389025300').success(function(data) {
+
+			});*/
+			$.ajax('http://slabs.cc/souschef/api/texttospeech?text="Thank you, Brian, for your reservation."').success(function(data) {
+				//alert(data);
+				$('#panel-poidetail').fadeOut();
+				alert('Thank you for your reservation!');
+				/*setTimeout(function() {
+					$('#audioPlay').play();
+				}, 500);*/
+			var msg = new SpeechSynthesisUtterance('Thank you');
+			window.speechSynthesis.speak(msg);
+				
+				//$('#bookitbutton').removeClass('loading');
 				booking = false;
-			}, 2000);
+			}).fail(function(xhr, text, err) {
+				alert('There was an error booking your reservation. Please see an agent.');
+			});
 		}
 	});
 });
