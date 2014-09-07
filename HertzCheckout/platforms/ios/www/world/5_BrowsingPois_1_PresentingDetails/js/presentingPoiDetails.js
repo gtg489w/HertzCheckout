@@ -58,6 +58,20 @@ var vegasData = [{
 	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_ford_mustang_gt_premium.jpg\" /></div><div>The 2014 Ford Mustang GT Premium has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
 }];
 
+var booking = false;
+$(function() {
+	$('#bookit').click(function() {
+		if(!booking) {
+			booking = true;
+			$('#bookitbutton').addClass('loading');
+			setTimeout(function() {
+				$('#bookitbutton').removeClass('loading');
+				booking = false;
+			}, 2000);
+		}
+	});
+});
+
 // implementation of AR-Experience (aka "World")
 var World = {
 	// you may request new data from server periodically, however: in this sample data is only requested once
