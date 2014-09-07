@@ -12,55 +12,46 @@ var vegasData = [{
 	"name":"Kia Rio",
 	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_kia_rio.jpg\" /></div><div>The 2014 Kia Rio is ranked #9 in Affordable Small Cars by U.S. News & World Report.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
 },{
-	//"id":"2","longitude":"-115.246289","latitude":"36.097308",
 	"id":"2","longitude":"-115.095366","latitude":"36.157955",
 	"description":"$42/day",
 	"name":"Ford Focus",
 	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_ford_focus.jpg\" /></div><div>The 2014 Ford Focus has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
 },{
-	//"id":"3","longitude":"-115.101289","latitude":"36.083308",
 	"id":"3","longitude":"-115.239100","latitude":"36.168295",
 	"description":"$46/day",
 	"name":"Toyota Corolla",
 	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_toyota_corolla.jpg\" /></div><div>The 2014 Toyota Corolla has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
 },{
-	//"id":"4","longitude":"-115.212289","latitude":"36.193308",
 	"id":"4","longitude":"-115.093875","latitude":"36.056520",
 	"description":"$60/day",
 	"name":"Nissan Altima",
 	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_nissan_altima.jpg\" /></div><div>The 2014 Nissan Altima has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
 },{
-	//"id":"5","longitude":"-115.110289","latitude":"36.104308",
 	"id":"5","longitude":"-115.174384","latitude":"36.176609",
 	"description":"$61/day",
 	"name":"Chevrolet Malibu",
 	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_chevrolet_malibu.jpg\" /></div><div>The 2014 Chevy Malibu has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
 },{
-	//"id":"6","longitude":"-115.266289","latitude":"36.096308",
 	"id":"6","longitude":"-115.173869","latitude":"36.034035",
 	"description":"$66/day",
 	"name":"Toyota Camry",
 	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_toyota_camry.jpg\" /></div><div>The 2014 Toyota Camry has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
 },{
-	//"id":"7","longitude":"-115.236289","latitude":"36.025308",
 	"id":"7","longitude":"-115.277209","latitude":"36.126710",
 	"description":"$59/day",
 	"name":"Toyota Rav 4",
 	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_toyota_rav4.jpg\" /></div><div>The 2014 Toyota Rav 4 has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
 },{
-	//"id":"8","longitude":"-115.170289","latitude":"36.086308",
 	"id":"8","longitude":"-115.051818","latitude":"36.108544",
 	"description":"$75/day",
 	"name":"Chevrolet Equinox",
 	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_chevrolet_equinox.jpg\" /></div><div>The 2014 Chevy Equinox has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
 },{
-	//"id":"9","longitude":"-115.122289","latitude":"36.133308",
 	"id":"9","longitude":"-115.229487","latitude":"36.053328",
 	"description":"$192/day",
 	"name":"Mercedes E Class",
 	"details":"<div style=\"text-align: center;\"><img src=\"./assets/car_mercedes_e_class.jpg\" /></div><div>The 2014 Mercedes E Class has an EPA-estimated fuel economy of 40 mpg.</div><br /><div>4/5 Passengers</div></div>2 Small Suitcases</div><div>Automatic Transmission</div><div>Air Conditioning</div><div>33 miles/gallon or better</div>"
 },{
-	//"id":"10","longitude":"-115.238289","latitude":"36.035308",
 	"id":"10","longitude":"-115.085292","latitude":"36.088155",
 	"description":"$192/day",
 	"name":"Ford Mustang GT",
@@ -167,6 +158,10 @@ var World = {
 	// fired when user pressed maker in cam
 	onMarkerSelected: function onMarkerSelectedFn(marker) {
 		World.currentMarker = marker;
+
+		$.ajax('http://car1.hack.att.io:5000/luigi/v1/service/vehicle_diagnostics').success(function(data) {
+			alert(data.abs);
+		});
 
 		/*
 			In this sample a POI detail panel appears when pressing a cam-marker (the blue box with title & description), 
