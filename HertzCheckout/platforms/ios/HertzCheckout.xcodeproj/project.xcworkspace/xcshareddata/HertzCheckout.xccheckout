@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>849E6BFF-365C-4DA1-B7A0-FEEC68A529BD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HertzCheckout</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D91D7264-9C03-4FA2-A6ED-CCBD76FEA397</key>
+		<string>https://github.com/gtg489w/HertzCheckout.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HertzCheckout/platforms/ios/HertzCheckout.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D91D7264-9C03-4FA2-A6ED-CCBD76FEA397</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gtg489w/HertzCheckout.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D91D7264-9C03-4FA2-A6ED-CCBD76FEA397</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D91D7264-9C03-4FA2-A6ED-CCBD76FEA397</string>
+			<key>IDESourceControlWCCName</key>
+			<string>hertz</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -46,6 +45,18 @@
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
+		CA657EDAC24A44329E16AF2B /* WTWikitudePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ED4659B1254DFBB15E0640 /* WTWikitudePlugin.m */; };
+		C1AD7BA11E7D481082757F5F /* WTARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BF135E993F43308D918022 /* WTARViewController.m */; };
+		87878E593CD9405B91D4C214 /* libWikitudeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C186E28A7E58486D98F28D36 /* libWikitudeSDK.a */; };
+		80937046E96244A1BA36C50E /* libWikitudeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB82DC421D543A4AA6AA318 /* libWikitudeSDK.a */; };
+		23BE4D2C15354050A9029FEA /* Accelerate.framework in Resources */ = {isa = PBXBuildFile; fileRef = FB075B8F604A436DAF621D62 /* Accelerate.framework */; };
+		3D73DA8E35864BE8AC421206 /* CoreMotion.framework in Resources */ = {isa = PBXBuildFile; fileRef = 27A5CFCD00E0408BA6D9CD2B /* CoreMotion.framework */; };
+		4C68D9D1060D47E5B7C0AC84 /* CoreText.framework in Resources */ = {isa = PBXBuildFile; fileRef = 85A77428E2B9477E83A39F13 /* CoreText.framework */; };
+		A213D177C7C64200984B7132 /* CoreVideo.framework in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9FCEF6A2147C4BC605E63 /* CoreVideo.framework */; };
+		7161EE38B14A4EBA9FDAEEF8 /* OpenGLES.framework in Resources */ = {isa = PBXBuildFile; fileRef = 80CAA6FFDB9B4D028243535D /* OpenGLES.framework */; };
+		0B772A4BF85A4AE4BB5184C3 /* Security.framework in Resources */ = {isa = PBXBuildFile; fileRef = A335E0E2FD0C4DF18D04B0AC /* Security.framework */; };
+		716048241B6E47FE9D61959D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9E5116AA1E4837BF6CBEA4 /* libc++.dylib */; };
+		11079EEF5B704ED1B1220824 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BD3B8052EC40909BD951BA /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +122,21 @@
 		8D1107310486CEB800E47090 /* HertzCheckout-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HertzCheckout-Info.plist"; path = "../HertzCheckout-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "HertzCheckout/config.xml"; sourceTree = "<group>"; };
+		70ED4659B1254DFBB15E0640 /* WTWikitudePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "WTWikitudePlugin.m"; path = "com.wikitude.phonegap.WikitudePlugin/WTWikitudePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		95BF135E993F43308D918022 /* WTARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "WTARViewController.m"; path = "com.wikitude.phonegap.WikitudePlugin/WTARViewController.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		C186E28A7E58486D98F28D36 /* libWikitudeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWikitudeSDK.a"; path = "com.wikitude.phonegap.WikitudePlugin/libWikitudeSDK.a"; sourceTree = "<group>"; fileEncoding = 4; };
+		5AB82DC421D543A4AA6AA318 /* libWikitudeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWikitudeSDK.a"; path = "HertzCheckout/Plugins/com.wikitude.phonegap.WikitudePlugin/libWikitudeSDK.a"; sourceTree = "<group>"; fileEncoding = 4; };
+		3D1642946DA94C49AEB1B770 /* WTWikitudePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WTWikitudePlugin.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTWikitudePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		383C1D155B094E829929FF46 /* WTARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WTARViewController.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTARViewController.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		2382AC3CBAAC462ABA5B7F90 /* WTArchitectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WTArchitectView.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTArchitectView.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		FB075B8F604A436DAF621D62 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Accelerate.framework"; path = "System/Library/Frameworks/Accelerate.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		27A5CFCD00E0408BA6D9CD2B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreMotion.framework"; path = "System/Library/Frameworks/CoreMotion.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		85A77428E2B9477E83A39F13 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreText.framework"; path = "System/Library/Frameworks/CoreText.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		2DC9FCEF6A2147C4BC605E63 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		80CAA6FFDB9B4D028243535D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenGLES.framework"; path = "System/Library/Frameworks/OpenGLES.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		A335E0E2FD0C4DF18D04B0AC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		8E9E5116AA1E4837BF6CBEA4 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
+		86BD3B8052EC40909BD951BA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +163,15 @@
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
+				80937046E96244A1BA36C50E /* libWikitudeSDK.a in Frameworks */,
+				23BE4D2C15354050A9029FEA /* Accelerate.framework in Resources */,
+				3D73DA8E35864BE8AC421206 /* CoreMotion.framework in Resources */,
+				4C68D9D1060D47E5B7C0AC84 /* CoreText.framework in Resources */,
+				A213D177C7C64200984B7132 /* CoreVideo.framework in Resources */,
+				7161EE38B14A4EBA9FDAEEF8 /* OpenGLES.framework in Resources */,
+				0B772A4BF85A4AE4BB5184C3 /* Security.framework in Resources */,
+				716048241B6E47FE9D61959D /* libc++.dylib in Frameworks */,
+				11079EEF5B704ED1B1220824 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +277,15 @@
 				301BF5C4109A6A2B0062928A /* SystemConfiguration.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
 				30E5649113A7FCAF007403D8 /* CoreMedia.framework */,
+				5AB82DC421D543A4AA6AA318 /* libWikitudeSDK.a */,
+				FB075B8F604A436DAF621D62 /* Accelerate.framework */,
+				27A5CFCD00E0408BA6D9CD2B /* CoreMotion.framework */,
+				85A77428E2B9477E83A39F13 /* CoreText.framework */,
+				2DC9FCEF6A2147C4BC605E63 /* CoreVideo.framework */,
+				80CAA6FFDB9B4D028243535D /* OpenGLES.framework */,
+				A335E0E2FD0C4DF18D04B0AC /* Security.framework */,
+				8E9E5116AA1E4837BF6CBEA4 /* libc++.dylib */,
+				86BD3B8052EC40909BD951BA /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,6 +301,12 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				70ED4659B1254DFBB15E0640 /* WTWikitudePlugin.m */,
+				95BF135E993F43308D918022 /* WTARViewController.m */,
+				C186E28A7E58486D98F28D36 /* libWikitudeSDK.a */,
+				3D1642946DA94C49AEB1B770 /* WTWikitudePlugin.h */,
+				383C1D155B094E829929FF46 /* WTARViewController.h */,
+				2382AC3CBAAC462ABA5B7F90 /* WTArchitectView.h */,
 			);
 			name = Plugins;
 			path = "HertzCheckout/Plugins";
@@ -331,7 +381,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 460;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HertzCheckout" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -424,6 +474,9 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				CA657EDAC24A44329E16AF2B /* WTWikitudePlugin.m in Sources */,
+				C1AD7BA11E7D481082757F5F /* WTARViewController.m in Sources */,
+				87878E593CD9405B91D4C214 /* libWikitudeSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +556,10 @@
 				);
 				PRODUCT_NAME = "HertzCheckout";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HertzCheckout/Plugins/com.wikitude.phonegap.WikitudePlugin\"",
+				);
 			};
 			name = Debug;
 		};
@@ -534,13 +591,17 @@
 				);
 				PRODUCT_NAME = "HertzCheckout";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HertzCheckout/Plugins/com.wikitude.phonegap.WikitudePlugin\"",
+				);
 			};
 			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-			        CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -582,7 +643,7 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-			        CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
