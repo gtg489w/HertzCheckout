@@ -34,7 +34,7 @@
      <div data-role="page" id="page1" style="background: none;" >
 
             <!-- transparent footer-->
-            <div data-role="footer" class="ui-bar" data-theme="f" data-position="fixed" style="text-align:center;">
+            <div data-role="footer" class="ui-bar" data-theme="f" data-position="fixed" style="text-align:center; display: none;">
 
                 <!-- small status-button -->
                 <a style="text-align:right;" id="popupInfoButton" href="#popupInfo" data-rel="popup" data-role="button" class="ui-icon-alt" data-inline="true" data-transition="pop" data-icon="alert" data-theme="e" data-iconpos="notext">Log</a> </p>
@@ -62,8 +62,8 @@
                 <!-- content of POI detail page, you may also add thumbnails etc. here if you like -->
                  <div data-role="content">
                     <div>
-                        <h1 style="float: left;" id="poi-detail-title"></h1>
-                        <h2 style="float: right;" id="poi-detail-description"></h2>
+                        <h2 style="float: left;" id="poi-detail-title"></h2>
+                        <h3 style="float: right;" id="poi-detail-description"></h3>
                         <div style="clear: both;">&nbsp;</div>
                     </div>
 
@@ -74,6 +74,37 @@
                         <div style="width: 200px; background: #009900; border: 0px; border-radius: 4px; color: #fff; margin: auto; padding: 12px; text-shadow: none;">
                             Book It!
                         </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <style>
+                        .stats {
+                            margin-top: 30px;
+                        }
+                        .stats td {
+                            padding: 2px 12px;
+                            text-align: left;
+                        }
+                        </style>
+                        <table class="stats" style="width: 300px;">
+                            <tr>
+                                <td style="width: 20px;"></td>
+                                <td>Air Bags</td>
+                                <td style="width: 20px;"></td>
+                                <td>Engine</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px;"></td>
+                                <td>ABS</td>
+                                <td style="width: 20px;"></td>
+                                <td>Brakes Suspension</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px;"></td>
+                                <td>Emissions</td>
+                                <td style="width: 20px;"></td>
+                                <td>Transmission</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
