@@ -180,38 +180,39 @@ var World = {
 		  }
 		}
 		*/
+		$('.checkicon').hide();
 		$.ajax('http://car1.hack.att.io:5000/luigi/v1/service/vehicle_diagnostics').success(function(data) {
 			if(data.vehicle_diagnostics.airBags == 'OK') {
 				$('#icon_airbags').show();
 			} else {
-				$('#icon_airbags').show();
+				$('#icon_airbags').hide();
 			}
 			if(data.vehicle_diagnostics.engine == 'OK') {
 				$('#icon_engine').show();
 			} else {
-				$('#icon_engine').show();
+				$('#icon_engine').hide();
 			}
 
 			if(data.vehicle_diagnostics.abs == 'OK') {
 				$('#icon_abs').show();
 			} else {
-				$('#icon_abs').show();
+				$('#icon_abs').hide();
 			}
 			if(data.vehicle_diagnostics.brakesSuspension == 'OK') {
 				$('#icon_brakes').show();
 			} else {
-				$('#icon_brakes').show();
+				$('#icon_brakes').hide();
 			}
 
 			if(data.vehicle_diagnostics.emissions == 'OK') {
 				$('#icon_emissions').show();
 			} else {
-				$('#icon_emissions').show();
+				$('#icon_emissions').hide();
 			}
 			if(data.vehicle_diagnostics.transmission == 'OK') {
 				$('#icon_transmission').show();
 			} else {
-				$('#icon_transmission').show();
+				$('#icon_transmission').hide();
 			}
 		});
 
