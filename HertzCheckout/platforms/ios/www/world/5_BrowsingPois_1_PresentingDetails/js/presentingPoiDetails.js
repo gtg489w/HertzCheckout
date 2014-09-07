@@ -159,8 +159,60 @@ var World = {
 	onMarkerSelected: function onMarkerSelectedFn(marker) {
 		World.currentMarker = marker;
 
+		/*
+		{
+		  "vehicle_diagnostics": {
+		    "abs": "OK", 
+		    "airBags": "OK", 
+		    "brakesSuspension": "OK", 
+		    "emissions": "OK", 
+		    "engine": "OK", 
+		    "fuelUsage": 0, 
+		    "odometer": 11256, 
+		    "oilLife": 10, 
+		    "tirePressure": {
+		      "frontLeftTirePressure": 34, 
+		      "frontRightTirePressure": 22, 
+		      "rearLeftTirePressure": 32, 
+		      "rearRightTirePressure": 33
+		    }, 
+		    "transmission": "OK"
+		  }
+		}
+		*/
 		$.ajax('http://car1.hack.att.io:5000/luigi/v1/service/vehicle_diagnostics').success(function(data) {
-			alert(data.abs);
+			if(data.vehicle_diagnostics.airBags == 'OK') {
+				$('#icon_airbags').show();
+			} else {
+				$('#icon_airbags').show();
+			}
+			if(data.vehicle_diagnostics.engine == 'OK') {
+				$('#icon_engine').show();
+			} else {
+				$('#icon_engine').show();
+			}
+
+			if(data.vehicle_diagnostics.abs == 'OK') {
+				$('#icon_abs').show();
+			} else {
+				$('#icon_abs').show();
+			}
+			if(data.vehicle_diagnostics.brakesSuspension == 'OK') {
+				$('#icon_brakes').show();
+			} else {
+				$('#icon_brakes').show();
+			}
+
+			if(data.vehicle_diagnostics.emissions == 'OK') {
+				$('#icon_emissions').show();
+			} else {
+				$('#icon_emissions').show();
+			}
+			if(data.vehicle_diagnostics.transmission == 'OK') {
+				$('#icon_transmission').show();
+			} else {
+				$('#icon_transmission').show();
+			}
 		});
 
 		/*
