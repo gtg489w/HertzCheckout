@@ -34,7 +34,8 @@ var app = {
     // A callback which gets called if the device is able to launch ARchitect Worlds
     onDeviceSupportedCallback: function() {
         app.isDeviceSupported = true;
-        app.loadARchitectWorld('www/world/ahhsters/index.html');
+        //app.loadARchitectWorld('www/world/ahhsters/index.html');
+        app.loadARchitectWorld('www/world/5_BrowsingPois_1_PresentingDetails/index.html');
     },
 
     // A callback which gets called if the device is not able to start ARchitect Worlds
